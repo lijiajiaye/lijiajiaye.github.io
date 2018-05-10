@@ -4,7 +4,7 @@
 			<meta charset="UTF-8">
 			<title>Blu-ray Disc</title>
   		</head> 
-		<h1>蓝光电影世界</h1><img src="timg.gif" alt="logo" width="120px" height="60px" border="1px" title="蓝光碟">
+		<h1>蓝光电影推荐</h1><img src="timg.gif" alt="logo" width="120px" height="60px" border="1px" title="蓝光碟">
 		<input type="text">
 		<button>搜索</button>
 		<hr style="border: 1px solid black">
@@ -16,38 +16,91 @@
 			background-size: 100%;
             
 		}
+		h1{
+            color: tan;
+			text-shadow: 5px 5px yellow;
+		}
 		.a1{
 			height:400px;
-			width:250px;
-			background:#fff;
-			margin-left:50px;
-			margin-top:10px;
-			margin-right: 10px;
+			width:200px;
+			background:#fff;  
+			margin-left:40px;
+			margin-top:40px;
+			margin-right:40px;
 			float: left;
-			border: 5px solid;
 		}
-	</style>
-		<div>
-		  <dl>
-			<dd>首页</dd>
-			<dd>第二页</dd>
-			<dd>第三页</dd>
-			<dd>第四页</dd>
-          </dl>
+		.a1 ol{
+			margin:10px;
+			padding:10px;
+		}
+		*{
+			margin:0;
+			padding:0;
+		}
+		.nav{
+			width:auto;
+			position:absolute;
+			left:50%;
+			margin-left:-500px;
+		}
+		.nav ul li{
+			float:left;
+			list-style-type: none;
+
+		}
+	    .nav ul li a{
+	    	display:block;
+	    	width: 200px;
+	    	height: 40px;
+	    	color: red;
+	    	text-align: center;
+	    	line-height: 40px;
+	    	text-decoration:none;
+	    	background-color:blue;
+	    }
+	    .nav ul li a:hover{
+	    	color:yellow;
+	    	background-color:white;
+	    	width: 250px;
+	    	height: 60px;	
+	    }
+	    .tu a{
+	    	display:inline-block;
+	    	
+	    }
+        .tu a img:hover{
+        	width: 690px;
+        	height: 320px;
+        }
+	</style> 
+	    <div class="nav">
+		  <ul>
+			<li><a href="">首页</a></li>
+			<li><a href="">导航1</a></li>
+			<li><a href="">导航2</a></li>
+			<li><a href="">导航3</a></li>
+			<li><a href="">导航4</a></li>
+          </ul>
         </div>
-		<h1><marquee style="color: red;font-size: 50px;">It's work!</marquee></h1>
 		<br>
+		<h2><marquee style="color: red;font-size: 50px;">欢迎来到电影的世界!</marquee></h2>
 		<div class="a1">
-	  	    <h2><em>正在热映</em></h2>
-	  	    <p><ol>
-	  			<li><span style="color: red">后来的我们</span></li>
-	  			<img src="后来的我们.jpg" alt="后来的我们" title="后来的我们" width="120px" height="60px">	
-	  			<li>幕后玩家</li>
-	  			<img src="幕后玩家.jpg" alt="幕后玩家" title="幕后玩家" width="120px" height="60px">
-				<li>战神纪</li>
-				<img src="战神纪.jpg" alt="战神纪" title="战神纪" width="120px" height="60px">
-				<li>低压槽</li>	
-			  </ol></p>
+	  	  <h3><em>正在热映</em></h3>
+	  	  <p>
+	  	  	<ol>
+	  	      <li><span style="color: red">后来的我们</span></li>
+	  		  <img src="后来的我们.jpg" alt="后来的我们" title="后来的我们" width="120px" height="60px">	
+	  		  <li>幕后玩家</li>
+	  	      <img src="幕后玩家.jpg" alt="幕后玩家" title="幕后玩家" width="120px" height="60px">
+			  <li>战神纪</li>
+			  <img src="战神纪.jpg" alt="战神纪" title="战神纪" width="120px" height="60px">
+			  <li>低压槽</li>	
+			</ol>
+		  </p>
+	  	</div>
+	  	<div class="tu">
+	  		<a href="SurfaceStudio壁纸19201080.jpg"><img src="SurfaceStudio壁纸19201080.jpg" name="图1" width="200" height="80" border="1" alt="图1"></a>
+	  	    <a href="SurfaceStudio气球19201080.jpg"><img src="SurfaceStudio气球19201080.jpg" name="图2" width="200" height="80" border="1" alt="图2"></a>
 	  	</div>
   	</body>
 	</html>
