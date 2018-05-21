@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>按钮</title>
+</head>
+<body>
+	<input type="checkbox" id="ios" class="b">
+		<label for="ios"></label><br>
+	<input type="checkbox" id="star" class="a">
+		<label for="star"></label>
+</body>
+</html>
+<style>
+	.b + label[for="ios"]{
+		width: 80px;
+		height: 40px;
+		display: inline-block;
+		border-radius: 45px;
+		padding: 2px;
+		background-color: black;
+		transition:background-color 0.2s;
+	}
+	.b + label[for="ios"]::before{
+		content: '';
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		border-radius: 45px;
+		background-color: grey;
+		transition: 0.2s;
+	}
+	.b:checked + label[for="ios"]::before{
+		margin-left: 40px;
+		background-color: white;
+		}
+		.b:checked + label[for="ios"]{
+			background-color: grey;
+		}
+	input{
+		display: none;
+	}
+	.a + label[for="star"]{
+		display: inline-block;
+		width: 100px;
+		height: 100px;
+		margin-left: 10px;
+		margin-top: 0px;
+		background-image: url(http://www.lanrenzhijia.com/demos/42/4230/demo/images/web_heart_animation.png);
+	}
+	.a:checked + label[for="star"]{
+		background-position: -2800px 0;
+		transition: 0.46666s steps(28);
+	}
+</style>
